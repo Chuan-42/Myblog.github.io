@@ -1,0 +1,54 @@
+<div id="sidebar">
+     <div id="diy_right_menu">
+      <div class="right_menu_order_nav">
+        <a href="/tag"
+           class="right_menu_top">标签</a>
+        <a href="/category"
+           class="right_menu_top">分类</a>
+        <a href="/archive"
+           class="right_menu_top">归档</a>
+        <a href="/friend"
+           class="right_menu_top">友链</a>
+        <a href="/"
+           class="right_menu_center">首页</a>
+      </div>
+    </div>
+      <script>
+       document.oncontextmenu=function(e){
+            var even=e||event;
+            var oDiv=document.getElementById("diy_right_menu");
+            oDiv.style.display="block";
+            oDiv.style.left= e.clientX-120+"px";
+            oDiv.style.top= e.clientY-100+"px";
+
+            document.onclick=function(){
+                var oDiv=document.getElementById("diy_right_menu");
+                oDiv.style.display="none";
+            };
+            return false;
+        };
+    </script>
+    <div class="menu-wrap" style="display:none;">
+        <nav class="menu">
+            <div class="menu-introduce"> 
+                <div class="introduce-avatar"></div> 
+                <div class="introduce-info"> 
+                    <div class="introduce-user"><span></span></div>        
+                </div> 
+            </div> 
+            <div class="menu-list">
+                <ul></ul> 
+            </div> 
+            <div class="menu-link" style="margin: 50px 0 25px;"></div> 
+        </nav>
+        <button class="menu-button-close"></button>
+        <div class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+                <path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z"/>
+            </svg>
+        </div>
+    </div>
+    <button class="menu-button-open">Menu</button>
+    <div class="menu-cover"></div>
+    
+</div>

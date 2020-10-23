@@ -1,0 +1,306 @@
+# ---- GitHub文件源配置 ----
+# GitHub用户名(不是昵称), 注意大小写
+# GitHubUserName: first19326
+# GitHub主题仓库名称
+# GitHubRepositories: Hexo-LiveForCode
+
+# ---- 基础信息配置 ----
+# 博主名称, 文章后缀和主页图片上都会使用此名称
+BlogUser: Chuandm
+# 用户头像URL
+BlogAvatar: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603275008493&di=99f771f74f1b3b405687cd6357570e65&imgtype=0&src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fblog%2F202008%2F08%2F20200808142612_nsopf.thumb.400_0.jpeg # http://www.chuandm.top/static/image/sidebar/avatar.jpg
+# 创建时间
+BlogStartDate: "2020-10-21"
+
+# ---- 网站配置 ----
+# 当前页失去焦点, 页面Title显示文字
+WebsiteTitleBlur: (◍´꒳`◍) Hi
+# 当前页失去焦点, 页面Title变化, 延时时间, 单位毫秒
+WebsiteTitleBlurTimeOut: 500
+# 当前页获取焦点, 页面Title显示文字, 显示后延时恢复原Title
+WebsiteTitleFocus: (*´∇｀*) 欢迎回来!
+# 当前页获取焦点, 页面title变化, 延时时间, 单位毫秒
+WebsiteTitleFocusTimeOut: 1000
+# 网站图标
+WebsiteFavicon: http://www.chuandm.top/static/img/logo.png
+
+# ---- 进度条配置 ----
+ProgressBar:
+  id: topProgressBar
+  color: "#77B6FF"
+  height: 2px
+  duration: 0.2
+
+# ---- Loading配置 ----
+Loading:
+  rebound:
+    tension: 16
+    friction: 5
+  spinner:
+    id: spinner
+    radius: 90
+    sides: 3
+    depth: 4
+    colors:
+      background: "#F0F0F0"
+      stroke: "#272633"
+      base: null
+      child: "#272633"
+    # When false the spring will reverse normally.
+    alwaysForward: true
+    # A number from 0.1 to 0.9 || null for full rotation.
+    restAt: 0.5
+    renderBase: false
+
+# ---- 页面动效配置 ----
+# true || false, 是否渲染主页头图动效
+HomeHeaderAnimationRendered: true
+# 主页头图动效设置
+HomeHeaderAnimation:
+  radius: 15
+  density: 0.2
+  # 颜色设置, "random" 为随机颜色
+  color: rgba(255, 255, 255, .2)
+  clearOffset: 0.3
+# true || false, 是否渲染文章详情页头图动效
+ArticleHeaderAnimationRendered: true
+# 文章详情页头图动效设置
+ArticleHeaderAnimation:
+  triW: 14
+  triH: 20
+  neighbours:
+    - side
+    - top
+    - bottom
+  speedTrailAppear: .1
+  speedTrailDisappear: .1
+  speedTriOpen: 1
+  trailMaxLength: 30
+  trailIntervalCreation: 100
+  delayBeforeDisappear: 2
+  colors:
+    - "#96EDA6"
+    - "#5BC6A9"
+    - "#38668C"
+    - "#374D84"
+    - "#BED5CB"
+    - "#62ADC6"
+    - "#8EE5DE"
+    - "#304E7B"
+# true || false, 是否渲染背景动效
+BackAnimationRendered: true
+# true || false, IE浏览器是否渲染背景动效（默认为false）
+IEBrowserBackAnimationRendered: false
+# 背景动效设置
+BackAnimation:
+  colorSaturation: 60%
+  colorBrightness: 50%
+  colorAlpha: 0.5
+  colorCycleSpeed: 5
+  verticalPosition: random
+  horizontalSpeed: 200
+  ribbonCount: 3
+  strokeSize: 0
+  parallaxAmount: -0.2
+  animateSections: true
+
+# ---- 主页配置 ----
+# 主页图片URL, 推荐尺寸 >= 1920 * 1080, 支持多张, 每次刷新随机设置一张
+HomeHeaderImage:
+  #- https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603282378832&di=a87c507979502253aaf9cb41eadde208&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201503%2F19%2F211608ztcq7higicydxhsy.jpg
+  #- https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603282378832&di=a87c507979502253aaf9cb41eadde208&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201503%2F19%2F211608ztcq7higicydxhsy.jpg
+  - http://www.chuandm.top/static/img/home.jpeg
+# 主页头图上的标语, 设置此选项会固定显示文字, 默认为空, 自动获取一句
+HomeBannerText: ""
+
+# ---- 文章详情页配置 ----
+# 文章详情页图片URL, 支持多张, 每次刷新随机设置一张
+ArticleHeaderImage:
+  - http://www.chuandm.top/static/img/article.jpg
+
+# ---- 其他页面配置 ----
+# 其他页面头图上的标语, 设置此选项会固定显示文字, 默认为空, 自动获取一句
+OtherBannerText: ""
+
+# ---- 菜单配置 ----
+# 当链接地址为''时, 则链接自动设置为失效
+# 菜单列表
+MenuList:
+  - name: 首页
+    href: /
+  - name: 标签
+    href: /tag
+  - name: 分类
+    href: /category
+  - name: 归档
+    href: /archive
+  - name: 关于
+    href: /about
+  # - name: 个人介绍
+  #   href: www.baidu.com
+  #   target: _blank
+  - name: 搜索
+    href: ""
+    class: search
+  - name: 留言板
+    href: /comment
+  - name: 友情链接
+    href: /friend
+  - name: 简历
+    href: /resume/index.html
+# 菜单链接
+MenuLink:
+  - icon: icon-weibo
+    url: ""
+  - icon: icon-wechat
+    url: ""
+  - icon: icon-qq
+    url: http://mail.qq.com/cgi-bin/qm_share?email=2454372322@qq.com&t=qm_mailme
+  - icon: icon-github
+    url: https://github.com/Chuan-42
+
+# ---- 页脚配置 ----
+# 页脚样式
+FooterStyle: 2
+# 页脚标语
+BottomText:
+  # 图标
+  icon: like-fill
+  # 图标左侧文字
+  left: 若非生活所迫
+  # 图标右侧文字
+  right: 谁愿满身才华
+# 是否显示主题信息
+ThemeInfo: false
+
+# ---- 控制台输出 ----
+ConsoleList:
+  - - 你好
+    - "World"
+  - - "欢迎来到:"
+    - MyBlog
+
+# ---- 字体图标扩展 ----
+FontIconExtend: ""
+
+# ---- 赞赏配置 ----
+Donate:
+  paypal: ""
+  bitcoin: ""
+  alipay: ""
+  wechat: ""
+
+# ---- Code Style ----
+Code:
+  style: normal
+
+# ---- Algolia配置 ----
+Search:
+  applicationID: 5N7YXFSLSB
+  apiKey: c7abab9f11b79102b9aff7fe6d41447d
+  indexName: Notes
+  hits:
+    page: 10
+  labels:
+    placeholder: 搜索
+    empty: 未发现与 「${query}」 相关的内容
+    stats: ${hits} 条相关条目，使用了 ${time} 毫秒
+
+# ---- Valine配置 ----
+Valine:
+  switch: true
+  el: .comments-content
+  appId: srhKtvWPQTWYKh3qX8G8M7v0-gzGzoHsz
+  appKey: 8uVSP1q6UlALVC5igYfIfv2h
+  placeholder: 你是我一生只会遇见一次的惊喜...
+  avatar: mm
+  meta: nick,mail,link
+  requiredFields: nick,mail
+  pageSize: 5
+  lang: zh-cn
+  visitor: true
+  enableQQ: true
+
+# ---- Tocbot配置 ----
+Tocbot:
+  switch: true
+  tocSelector: .toc
+  contentSelector: .article-body
+  headingSelector: h1, h2, h3, h4, h5
+  headingsOffset: 0
+  scrollSmooth: true
+  scrollSmoothOffset: -5
+  positionFixedSelector: .toc
+  positionFixedClass: toc-fixed
+
+# ---- Require配置 ----
+Require:
+  baseUrl: http://www.chuandm.top/static/js/
+  waitSeconds: 100
+
+# ---- Meting配置 ----
+Meting:
+  id: "3778678"
+  lrcshow: false
+  server: netease
+  type: playlist
+  fixed: true
+  autoplay: false
+  loop: all
+  order: random
+  preload: auto
+  volume: 0.67
+  mutex: true
+
+# ---- Lazy Load ----
+LazyLoad:
+  default: http://www.chuandm.top/static/img/lazyload.svg
+
+# ---- Style配置 ----
+Style:
+  aplayer: http://www.chuandm.top/static/css/APlayer.css
+  archive: http://www.chuandm.top/static/css/archive.css
+  donate: http://www.chuandm.top/static/css/donate.css
+  fancybox: http://www.chuandm.top/static/css/jquery.fancybox.css
+  footer: http://www.chuandm.top/static/css/footer.css
+  iconfont: https://at.alicdn.com/t/font_1546312_l3yohatebw.css
+  index: http://www.chuandm.top/static/css/index.css
+  menuBubble: http://www.chuandm.top/static/css/menu-bubble.css
+  page: http://www.chuandm.top/static/css/page.css
+  post: http://www.chuandm.top/static/css/post.css
+  search: http://www.chuandm.top/static/css/search.css
+  tocbot: http://www.chuandm.top/static/css/tocbot.css
+  normal: http://www.chuandm.top/static/css/normal.css
+  night: http://www.chuandm.top/static/css/night.css
+  clipboard: http://www.chuandm.top/static/css/clipboard.css
+# ---- Script配置 ----
+Script:
+  aplayer: http://www.chuandm.top/static/js/APlayer.min.js
+  config: http://www.chuandm.top/static/js/require.config.js
+  index: http://www.chuandm.top/static/js/index.js
+  instantSearch: http://www.chuandm.top/static/js/instantsearch.min.js
+  jQuery: http://www.chuandm.top/static/js/jquery-3.4.1.min.js
+  loading: http://www.chuandm.top/static/js/loading.js
+  meting: http://www.chuandm.top/static/js/Meting.min.js
+  iscroll: http://www.chuandm.top/static/js/iscroll.js
+  require: http://www.chuandm.top/static/js/require.min.js
+
+# ---- Font配置 ----
+Font:
+  LongCang: http://www.chuandm.top/static/font/LongCang.css
+  Monda: http://www.chuandm.top/static/font/Monda.css
+  NotoSansSC: http://www.chuandm.top/static/font/NotoSansSC.css
+  Playball: http://www.chuandm.top/static/font/Playball.css
+  PTMono: http://www.chuandm.top/static/font/PTMono.css
+  RobotoSlab: http://www.chuandm.top/static/font/RobotoSlab.css
+  Rosario: http://www.chuandm.top/static/font/Rosario.css
+  UbuntuMono: http://www.chuandm.top/static/font/UbuntuMono.css
+
+# ---- 文章尾缀配置 ----
+Suffix:
+  about: 若非生活所迫, 谁愿满身才华.
+
+# ---- 主题信息配置 ----
+Theme:
+  url: https://github.com/first19326/Hexo-LiveForCode
+  name: Hexo - Live For Code
